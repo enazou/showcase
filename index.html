@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/footerTemplate.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<script>
+</script>
+<body>
+<!--loading-->
+<div class="loading pageShow" id="loading">
+    <img src="imgs/loading.gif">
+</div>
+
+<!--header-->
+<header id="header" class="header1">
+    <h1 id="logo"><a href="javascript:;"><img id="headLogoImg" src="imgs/logo.png" alt=""></a></h1>
+    <ul id="nav" class="nav">
+        <li class="navMask"></li>
+        <li class="active" data-hash="index"><a href="javascript:;">HOME</a></li>
+        <li data-hash="case"><a href="javascript:;">CASE</a></li>
+        <li data-hash="about"><a href="javascript:;">ABOUT US</a></li>
+        <li data-hash="contact"><a href="javascript:;">CONTACT</a></li>
+        <li data-hash="mall"><a href="javascript:;">MALL</a></li>
+    </ul>
+    <div class="share">
+        <a href="javascript:;" class="i1"></a>
+        <a href="javascript:;" id="contactUs" class="i2"></a>
+        <div id="contactUsInfo" class="weChat">
+            <div class="weChatTop"></div>
+            <div class="weChatCon">
+                <img src="imgs/code.jpg" alt="">
+                <div class="weChatTitle">
+                    <span>WeChat</span>
+                    <span>ICEART2014</span>
+                </div>
+                <div class="qq">
+                    <span>Tencent</span>
+                    <a href="javascript:;">QQ</a>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:;" class="i3"></a>
+        <a href="javascript:;" class="blog" href="javascript:;">I BLOG</a>
+    </div>
+</header>
+
+<!--homeMain-->
+<div class="page homeWrap pageShow" data-hash="index">
+    <ul id="homeList" class="homeList">
+        <li class="homeContent">
+            <div class="centerLogo">
+                <img id="logoImg" class="logoImg" src="imgs/home/logo.png">
+                <img id="logoCircle" class="logoCircle" src="imgs/home/logo-quan.png">
+                <img class="logoShadow" src="imgs/home/logo-shadow.png">
+            </div>
+        </li>
+        <li class="homeDesign">
+            <div id="designCon" class="designCon">
+                <div class="designSect">
+                    <a class="section_menu bg1" data-tab="designSectA" href="javascript:;">
+                        <strong class="section_title">Mobile app</strong>
+                        <span data-tab="designSectA" class="disiView">View</span>
+                    </a>
+                    <div data-tab="designSectA" class="designDisc">
+                            <p class="dis_title">移动品牌建设，手机应用开发设计</p>
+                            <p class="dis_title_en">Mobile brand building, mobile application development and design.</p>
+                    </div>
+                </div>
+                <div class="designSect">
+                    <a class="section_menu bg2" data-tab="designSectB" href="javascript:;">
+                        <strong class="section_title">Website</strong>
+                        <span data-tab="designSectB" class="disiView">View</span>
+                    </a>
+                    <div data-tab="designSectB" class="designDisc">
+                        <p class="dis_title">原创优秀网页品牌建设 推广</p>
+                        <p class="dis_title_en">Original web brand building promotion,Committed to build No.1</p>
+                    </div>
+                </div>
+                <div class="designSect">
+                    <a class="section_menu bg3" data-tab="designSectC" href="javascript:;">
+                        <strong class="section_title">enterpriseVi</strong>
+                        <span data-tab="designSectC" class="disiView">View</span>
+                    </a>
+                    <div data-tab="designSectC" class="designDisc">
+                        <p class="dis_title">企业标识,标志创意设计</p>
+                        <p class="dis_title_en">Excellent team building in ChinaCorporate logo,logo creative design.</p>
+                    </div>
+                </div>
+                <div class="designSect">
+                    <a class="section_menu bg4" data-tab="designSectD" href="javascript:;">
+                        <strong class="section_title">Brand</strong>
+                        <span data-tab="designSectD" class="disiView">View</span>
+                    </a>
+                    <div data-tab="designSectD" class="designDisc">
+                        <p class="dis_title">致力创建全球顶尖品牌服务</p>
+                        <p class="dis_title_en">Committed to creating the world's top brand service,Multimedia Design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="designBg">
+                <div id="designBgImg" class="designBgImg">
+                    <div data-tab="designSectA" class="designBgDiscA">
+                        <img src="imgs/home/1.jpg">
+                    </div>
+                    <div data-tab="designSectB" class="designBgDiscB">
+                        <img id="imgMoveB1" src="imgs/home/3_1.png">
+                        <img id="imgMoveB2"src="imgs/home/3_2.png">
+                    </div>
+                    <div data-tab="designSectC" class="designBgDiscC">
+                        <img class="logo3" src="imgs/home/3_logo.png">
+                    </div>
+                    <div data-tab="designSectD" class="designBgDiscD">
+                        <img class="bgShadow" src="imgs/home/4_2.png">
+                        <img class="bgShadow2" src="imgs/home/4_2.png">
+                        <img id="imgMoveB3" class="bgD" src="imgs/home/4_1.png">
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="homeAbout">
+            <div class="aboutCon">
+                <p id="aboutTitle" class="aboutTitle">ABOUT ICEART</p>
+                <ol id="aboutList" class="aboutList clearFix">
+                    <li>
+                        <div class="imgWrap">
+                            <img src="imgs/home/5_2.png">
+                            <p class="imgLabel clearFix">
+                                <em>PC服务</em>
+                                <span></span>
+                                <img src="imgs/home/5_pointer.png">
+                            </p>
+                            <p class="imgLabel clearFix">
+                                <em>移动APP</em>
+                                <span></span>
+                                <img src="imgs/home/5_pointer.png">
+                            </p>
+                            <p class="imgLabel clearFix">
+                                <img src="imgs/home/5_pointer.png">
+                                <span></span>
+                                <em>BRAND</em>
+                            </p>
+                            <p class="imgLabel clearFix">
+                                <img src="imgs/home/5_pointer.png">
+                                <span></span>
+                                <em>WEB建设</em>
+                            </p>
+                            <p class="imgLabel clearFix">
+                                <img src="imgs/home/5_pointer.png">
+                                <span></span>
+                                <em>LOGO</em>
+                            </p>
+                        </div>
+                        <div class="detailDisc">
+                            <p>ICEART冰艺从创办以来始终以出众的视觉艺术设计和应用表现能力影响着我们的每一个客及每一个使用者,每个作品都能带给观众真正意义上的视觉享受.</p>
+                            <p>在传达品牌理念的同时始终能以用户体验为核心进行创新设计，满足您的任何创新需求。拥有业界最顶尖的视觉设计师,</p>
+                            <p>最专业的设计团队和设计流程规范会为您的企业提升品质</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgWrap">
+                            <img class="imgSize" src="imgs/home/5_4.png">
+                        </div>
+                        <div class="detailDisc">
+                            <p>以用户体验为基础进行的人机交互设计是要 考虑用户的背景、使用经验以及在操作过程中的感受，</p>
+                            <p>从而设计符合最终用户的产品，使得最终用户在使用产品时愉悦、符合自己的逻辑、</p>
+                            <p>有效完成并且是高效使用产品</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgWrap">
+                            <img src="imgs/home/5_2.png">
+                            <p class="imgLabel clearFix">
+                                <em>PC服务</em>
+                                <span></span>
+                                <img src="imgs/home/5_pointer.png">
+                            </p>
+                            <p class="imgLabel clearFix">
+                                <em>移动APP</em>
+                                <span></span>
+                                <img src="imgs/home/5_pointer.png">
+                            </p>
+                            <p class="imgLabel clearFix">
+                                <img src="imgs/home/5_pointer.png">
+                                <span></span>
+                                <em>BRAND</em>
+                            </p>
+                            <p class="imgLabel clearFix">
+                                <img src="imgs/home/5_pointer.png">
+                                <span></span>
+                                <em>WEB建设</em>
+                            </p>
+                            <p class="imgLabel clearFix">
+                                <img src="imgs/home/5_pointer.png">
+                                <span></span>
+                                <em>LOGO</em>
+                            </p>
+                        </div>
+                        <div class="detailDisc">
+                            <p>ICEART冰艺从创办以来始终以出众的视觉艺术设计和应用表现能力影响着我们的每一个客及每一个使用者,每个作品都能带给观众真正意义上的视觉享受.</p>
+                            <p>在传达品牌理念的同时始终能以用户体验为核心进行创新设计，满足您的任何创新需求。拥有业界最顶尖的视觉设计师,</p>
+                            <p>最专业的设计团队和设计流程规范会为您的企业提升品质</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </li>
+    </ul>
+    <div class="toNext"></div>
+    <div id="homeListTab" class="mainTab">
+        <a class="active" href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+    </div>
+</div>
+
+<!--caseMain-->
+<div id="caseWrap" class="page caseWrap" data-hash="case">
+    <div id="caseBanner" class="caseBanner">
+        <p class="bannerTitle">A private space to share and discuss</p>
+        <div class="bannerImgs">
+            <ul class="bannerImgsList">
+                <li><img src="imgs/case/1bn1.jpg"></li>
+                <li><img src="imgs/case/1bn2.jpg"></li>
+                <li><img src="imgs/case/1bn3.jpg"></li>
+            </ul>
+        </div>
+        <div id="bannerTitleTab" class="bannerTitleTab">
+            <ul class="bannerTitleList">
+                <li>
+                    <p>冰艺专注互联网品牌建设,致力打造国内顶尖网站建设</p>
+                    <p>Autocratic Internet</p>
+                </li>
+                <li>
+                    <p>开创互联网＋，优质视觉体验</p>
+                    <p>Quality Experience</p>
+                </li>
+                <li>
+                    <p>专制主流手机端产品体验研究，引领潮流</p>
+                    <p>app Design Experience</p>
+                </li>
+            </ul>
+        </div>
+        <div id="bannerNums" class="bannerNums clearFix">
+            <div class="case">
+                <span class="numChange">32</span>
+                <span>+</span>
+                <p>Case</p>
+            </div>
+            <div class="numSplit"></div>
+            <div class="partner">
+                <span class="numChange">26</span>
+                <p>Partner</p>
+            </div>
+            <div class="numSplit"></div>
+            <div class="member">
+                <span class="numChange">8</span>
+                <span>+</span>
+                <p>Member</p>
+            </div>
+        </div>
+        <div id="bannerImgTab" class="bannerImgTab">
+            <ul class="bannerImgTabList">
+                <li class="imgIn">
+                    <img src="imgs/case/bb1.png">
+                </li>
+               <li>
+                    <div>
+                        <img class="imgCon" src="imgs/case/bb2_4.jpg">
+                        <img class="imgBorder" src="imgs/case/bb2_1.png">
+                        <img class="imgShadow" src="imgs/case/bb2_2.png">
+                        <img class="imgFoot" src="imgs/case/bb2_3.png">
+                    </div>
+                </li>
+                 <li>
+                    <img src="imgs/case/bb3.png">
+                </li>
+            </ul>
+            <div class="bannerImgBtn">
+                <a href="javascript:;" id="bannerImgPrev" class="bannerImgPrev"><img src="imgs/case/left_btn.png"></a>
+                <a href="javascript:;" id="bannerImgNext" class="bannerImgNext"><img src="imgs/case/right_btn.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="caseConNav">
+        <ul id="caseConNavList" class="caseConNavList">
+            <li class="navBg">
+                <div class="navBgWrap">
+                    <a href="javascript:;">Whole</a>
+                    <a href="javascript:;">Mobile</a>
+                    <a href="javascript:;">Website</a>
+                    <a href="javascript:;">Logo</a>
+                    <a href="javascript:;">Flat</a>
+                </div>
+            </li>
+            <li><a href="javascript:;">Whole</a></li>
+            <li><a href="javascript:;">Mobile</a></li>
+            <li><a href="javascript:;">Website</a></li>
+            <li><a href="javascript:;">Logo</a></li>
+            <li><a href="javascript:;">Flat</a></li>
+        </ul>
+        <div id="caseConImgs" class="caseConImgs"></div>
+    </div>
+</div>
+
+<!--aboutUsMain-->
+<div id="aboutWrap" class="page aboutWrap"  data-hash="about">
+    <div class="aboutBanner">
+        <div class="people">
+            <div id="aboutTeamWrap" class="aboutTeamWrap">
+                <span class="aboutTeamShadow"></span>
+                <div class="aboutTeam">
+                    <img src="imgs/about/people1.png">
+                    <img src="imgs/about/people2.png">
+                </div>
+            </div>
+        </div>
+        <div id="aboutTeamTitle" class="aboutTeamTitle">
+            <p>Domestic Internet brand</p>
+            <p>view Iceart members</p>
+        </div>
+        <div id="aboutTeamDetail" class="aboutTeamDetail">
+            <div class="aboutTeamPic">
+                <a href="javascript:;">
+                    <span class="imgWrap">
+                        <img src="imgs/about/team/1.jpg">
+                    </span>
+                    <span class="mask"></span>
+                    <span class="search"><img src="imgs/search_icon.png"></span>
+                </a>
+            </div>
+            <div class="aboutTeamPic">
+                <a href="javascript:;">
+                    <span class="imgWrap">
+                        <img src="imgs/about/team/2.jpg">
+                    </span>
+                    <span class="mask"></span>
+                    <span class="search"><img src="imgs/search_icon.png"></span>
+                </a>
+            </div>
+            <div class="aboutTeamPic">
+                <a href="javascript:;">
+                    <span class="imgWrap">
+                        <img src="imgs/about/team/3.jpg">
+                    </span>
+                    <span class="mask"></span>
+                    <span class="search"><img src="imgs/search_icon.png"></span>
+                </a>
+            </div>
+            <div class="aboutTeamPic noMargin">
+                <a href="javascript:;">
+                    <span class="imgWrap">
+                        <img src="imgs/about/team/4.jpg">
+                    </span>
+                    <span class="mask"></span>
+                    <span class="search"><img src="imgs/search_icon.png"></span>
+                </a>
+            </div>
+            <div class="aboutTeamPic">
+                <a href="javascript:;">
+                    <span class="imgWrap">
+                        <img src="imgs/about/team/5.jpg">
+                    </span>
+                    <span class="mask"></span>
+                    <span class="search"><img src="imgs/search_icon.png"></span>
+                </a>
+            </div>
+            <div class="aboutTeamPic">
+                <a href="javascript:;">
+                    <span class="imgWrap">
+                        <img src="imgs/about/team/6.jpg">
+                    </span>
+                    <span class="mask"></span>
+                    <span class="search"><img src="imgs/search_icon.png"></span>
+                </a>
+            </div>
+            <div class="aboutTeamPic">
+                <a href="javascript:;">
+                    <span class="imgWrap">
+                        <img src="imgs/about/team/7.jpg">
+                    </span>
+                    <span class="mask"></span>
+                    <span class="search"><img src="imgs/search_icon.png"></span>
+                </a>
+            </div>
+            <div class="aboutTeamPic noMargin">
+                <a href="javascript:;">
+                    <span class="imgWrap">
+                        <img src="imgs/about/team/8.jpg">
+                    </span>
+                    <span class="mask"></span>
+                    <span class="search"><img src="imgs/search_icon.png"></span>
+                </a>
+            </div>
+        </div>
+        <div class="aboutBannerLangs">
+            <div id="bannerTeamPicBtn" class="bannerTeamPicBtn">
+                <div class="kuang"></div>
+                <p>SHUT DOWN</p>
+            </div>
+            <div class="lang1"></div>
+            <div class="lang2"></div>
+            <div class="lang3"></div>
+            <div id="bannerLang4" class="lang4"></div>
+        </div>
+    </div>
+    <div class="aboutService">
+        <div class="aboutServiceTitle">
+            <p>service</p>
+            <p>Project process,the Internet's top construction</p>
+        </div>
+        <div id="aboutServiceContent" class="aboutServiceContent">
+            <div class="head">
+                <span class="headPoint"></span>
+                <span class="headPoint"></span>
+                <span class="headPoint"></span>
+            </div>
+            <div class="website">
+                <span class="search">&#xe602;</span>
+                <a class="web" href="javascript:;">http://www.iceart.com.cn/</a>
+                <span class="user">&#xe62a;</span>
+                <span class="add">&#xe667;</span>
+            </div>
+            <ul id="imgConList" class="imgConList clearFix">
+                <li>
+                    <div class="imgWrap imgWrap1">
+                        <img class="img" src="imgs/about/service/1.png">
+                        <div class="sub subX"></div>
+                        <div class="msg">
+                            <img class="icon" src="imgs/about/service/i1.png">
+                            <p class="title">项目研发设计咨询</p>
+                            <p class="info">IceArtR & D projects design ,Consulting Learn.</p>
+                        </div>
+                    </div>
+                    <div class="imgWrap imgWrap2">
+                        <img class="img" src="imgs/about/service/5_2.png">
+                        <img class="img" src="imgs/about/service/5_1.png">
+                        <div class="sub subX"></div>
+                        <div class="msg">
+                            <img class="icon" src="imgs/about/service/i1.png">
+                            <p class="title">技术实现研发</p>
+                            <p class="info">Technology development.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgWrap imgWrap3">
+                        <img class="img" src="imgs/about/service/2_2.png">
+                        <div class="sub subY"></div>
+                        <div class="msg">
+                            <img class="icon" src="imgs/about/service/i1.png">
+                            <p class="title">设计创意海航</p>
+                            <p class="info">Project design and start the process.</p>
+                        </div>
+                    </div>
+                    <div class="imgWrap imgWrap4">
+                        <img class="img" src="imgs/about/service/3_1.png">
+                    </div>
+                    <div class="imgWrap imgWrap5">
+                        <img class="img" src="imgs/about/service/6_1.png">
+                        <div class="sub subY"></div>
+                        <div class="msg">
+                            <img class="icon" src="imgs/about/service/i1.png">
+                            <p class="title">维护管理</p>
+                            <p class="info">Maintenance Management,Delivery balance due.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgWrap imgWrap6">
+                        <img class="img" src="imgs/about/service/4_2.png">
+                        <img class="img" src="imgs/about/service/4_3.png">
+                        <img class="img" src="imgs/about/service/4_1.png">
+                        <div class="sub subX"></div>
+                        <div class="msg">
+                            <img class="icon" src="imgs/about/service/i1.png">
+                            <p class="title">项目合作完结</p>
+                            <p class="info">End of cooperation and look forward to the next cooperation.</p>
+                        </div>
+                    </div>
+                    <div class="imgWrap imgWrap7">
+                        <img class="img" src="imgs/about/service/7_1.png">
+                        <div class="sub subX"></div>
+                        <div class="msg">
+                            <img class="icon" src="imgs/about/service/i1.png">
+                            <p class="title">任务交接</p>
+                            <p class="info">Task handover,Prepare on-line.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="aboutOurAbility">
+        <div class="head">
+            <div class="headSub"></div>
+            <div class="headTitle">Our ability</div>
+        </div>
+        <div id="abilityContent" class="abilityContent">
+            <ul class="abilityList abilityList1 clearFix">
+                <li>
+                    <div class="childImg">
+                        <img src="imgs/about/ability/i9.png">
+                    </div>
+                    <div class="childDisc">
+                        <p class="childTitle">IOS APP</p>
+                        <p class="childInfo">Application design, mobile terminal development.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="childImg">
+                        <img src="imgs/about/ability/i10.png">
+                    </div>
+                    <div class="childDisc">
+                        <p class="childTitle">BRANDS</p>
+                        <p class="childInfo">Subscribe to our newsletter to start receiving Quiver start receiving Quiver </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="childImg">
+                        <img src="imgs/about/ability/i11.png">
+                    </div>
+                    <div class="childDisc">
+                        <p class="childTitle">ENTERPRISE</p>
+                        <p class="childInfo">Custom brand personality, well-known platform construction</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="childImg">
+                        <img src="imgs/about/ability/i12.png">
+                    </div>
+                    <div class="childDisc">
+                        <p class="childTitle">SOCIALLY</p>
+                        <p class="childInfo">Social networking services, interactive experience design</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="childImg">
+                        <img src="imgs/about/ability/i13.png">
+                    </div>
+                    <div class="childDisc">
+                        <p class="childTitle">MARK VI</p>
+                        <p class="childInfo">Top brand logo design, international standards</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="childImg">
+                        <img src="imgs/about/ability/i14.png">
+                    </div>
+                    <div class="childDisc">
+                        <p class="childTitle">MULTIMEDIA</p>
+                        <p class="childInfo">Multimedia video production, visual arts</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="abilityList abilityList2 clearFix">
+                <div class="imgWrap">
+                    <img src="imgs/about/ability/l1.png">
+                </div>
+                <div class="imgWrap">
+                    <img src="imgs/about/ability/l2.png">
+                </div>
+                <div class="imgWrap">
+                    <img src="imgs/about/ability/l3.png">
+                </div>
+                <div class="imgWrap">
+                    <img src="imgs/about/ability/l4.png">
+                </div>
+                <div class="imgWrap">
+                    <img src="imgs/about/ability/l5.png">
+                </div>
+                <div class="imgWrap">
+                    <img src="imgs/about/ability/l6.png">
+                </div>
+                <div class="imgWrap">
+                    <img src="imgs/about/ability/l7.png">
+                </div>
+                <div class="imgWrap">
+                    <img src="imgs/about/ability/l8.png">
+                </div>
+                <div class="imgWrap">
+                    <img src="imgs/about/ability/l9.png">
+                </div>
+                <div class="imgWrap">
+                    <img src="imgs/about/ability/l10.png">
+                </div>
+            </div>
+        </div>
+        <div id="aboutAbilityBtn" class="aboutAbilityBtn">
+            <a class="active" href="javascript:;"></a>
+            <a href="javascript:;"></a>
+        </div>
+        <div class="aboutAbilitySwitch">
+            <a id="aboutAbilitySwitchBtn"  href="javascript:;">PARTNET</a>
+        </div>
+    </div>
+    <div class="aboutBtmCarousel">
+        <ul id="aboutBtmCarouselList" class="aboutBtmCarouselList">
+            <li><img src="imgs/about/btmCarrousel/pcs.png"></li>
+            <li><img src="imgs/about/btmCarrousel/pcs2.png"></li>
+            <li><img src="imgs/about/btmCarrousel/pcs3.png"></li>
+        </ul>
+        <div id="aboutBtmCarouselBtn" class="aboutBtmCarouselBtn">
+            <a class="active" href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+        </div>
+    </div>
+</div>
+
+<!--contactMain-->
+<div class="page contactWrap" data-hash="contact">
+    <div class="contactPage">
+        <div id="contactPageA" class="contactPageA">
+            <div class="contactPageACon">
+                <div class="seaBg">
+                    <img class="shan" src="imgs/contact/shan1.png">
+                    <img class="shan" src="imgs/contact/shan2.png">
+                    <img src="imgs/contact/lu.png">
+                    <img class="shan" src="imgs/contact/shan4.png">
+                    <img class="shan" src="imgs/contact/shan3.png">
+                    <img src="imgs/contact/lang1.png">
+                    <img src="imgs/contact/lang2.png">
+                    <img src="imgs/contact/lang3.png">
+                    <div class="shadow"></div>
+                </div>
+                <div class="ship">
+                    <img src="imgs/contact/chuan1.png">
+                    <img src="imgs/contact/chuan2.png">
+                    <img src="imgs/contact/chuan3.png">
+                    <img src="imgs/contact/chuan4.png">
+                </div>
+                <div class="star">
+                    <img src="imgs/contact/1.png">
+                    <img src="imgs/contact/2.png">
+                    <img src="imgs/contact/3.png">
+                    <img src="imgs/contact/4.png">
+                </div>
+            </div>
+            <div class="contactPageAInfo">
+                <p class="title">Contacts</p>
+                <p class="subTitle">Iceart Network brand.</p>
+                <img class="icon" src="imgs/contact/6.png">
+                <p class="info">Thank you for supporting us,If you are interested in our contact us iceart ice art‘Your service 24 hours a,contact us!</p>
+                <div class="btns">
+                    <a class="active" href="javascript:;">ONLINE QQ</a>
+                    <a href="javascript:;">OUR MAILBOX</a>
+                </div>
+            </div>
+        </div>
+        <div class="contactPageWrap">
+            <div id="contactPageB" class="contactPageB">
+                <div class="contactPageBCon">
+                    <div class="titles">
+                        <p class="title">致力打造国内优网络品牌建设,诚信合作制定</p>
+                        <p class="titleEn">Telephone counseling Iceart?</p>
+                    </div>
+                    <div class="phone">
+                        <img class="callBg" src="imgs/contact/phone2.png">
+                        <div class="details">
+                            <p>联系我们</p>
+                            <p>183-1332-7175</p>
+                        </div>
+                        <img class="pointer" src="imgs/contact/pointer.png">
+                    </div>
+                </div>
+            </div>
+            <div id="contactPageC" class="contactPageC">
+                <div class="contactPageCCon">
+                    <div class="support">
+                        <img class="logo" src="imgs/contact/chuan_logo.png">
+                        <img class="close" src="imgs/contact/close.png">
+                        <div class="msg">
+                            <p>感谢你的支持</p>
+                            <p>Iceart thank you for your support.</p>
+                            <img class="lines" src="imgs/contact/lines.png">
+                        </div>
+                        <a class="btn" href="javascript:;">
+                            <div class="kuang"></div>
+                            <p class="btnTitle">MESSAGE</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contactLogoPics">
+                <div class="pic">
+                    <img src="imgs/contact/1.jpg">
+                    <p>2009</p>
+                </div>
+                <div class="pic">
+                    <img src="imgs/contact/2.jpg">
+                    <p>2010</p>
+                </div>
+                <div class="pic">
+                    <img src="imgs/contact/3.jpg">
+                    <p>2012</p>
+                </div>
+                <div class="pic">
+                    <img src="imgs/contact/4.jpg">
+                    <p>2014</p>
+                </div>
+                <div class="pic">
+                    <img src="imgs/contact/5.jpg">
+                    <p>2016</p>
+                </div>
+                <div id="contactLogoLastPic" class="pic">
+                    <div class="front">
+                    <img src="imgs/contact/6.jpg">
+                    <p>2018</p>
+                    </div>
+                    <div class="back">
+                        <p class="logoTitle">iceart</p>
+                        <div class="logoInfo">
+                            <p>Copyright © IceArt /case number</p>
+                            <p>滇ICP备10002052号-2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contactTab" class="mainTab">
+        <a class="active" href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+    </div>
+</div>
+
+<!--mallMain-->
+<div class="page mallWrap" data-hash="mall">
+    <div class="mallInfo">
+        <p class="title">该服务建设中</p>
+        <p class="titleEn">Mall’In development</p>
+        <p class="desc">Internet Mall, multi-functional ice arts service model, hope you can join （<a href="javascript:;">www.iceart.com.cn</a>）Excellent domestic network brand building platform’iceart</p>
+        <a href="index.html">
+            <div class="btns">
+                <p>HOME</p>
+            </div>
+        </a>
+    </div>
+    <div class="business">
+        <div id="businessWrap" class="businessWrap">
+            <div class="titles titles1">
+                <div class="title">企业建站</div>
+                <div class="titleEn">ENTERPRISE</div>
+                <div class="titleEn2">web</div>
+            </div>
+            <div class="titles titles2">
+                <div class="title">综合品牌</div>
+                <div class="titleEn">BRANDS</div>
+                <div class="titleEn2">Brands</div>
+            </div>
+            <div class="titles titles3">
+                <div class="title">手机端</div>
+                <div class="titleEn">APPLICATION</div>
+                <div class="titleEn2">App</div>
+            </div>
+            <div class="titles titles4">
+                <div class="title">社交媒体</div>
+                <div class="titleEn">MULTIMEDIA</div>
+                <div class="titleEn2">flat</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
